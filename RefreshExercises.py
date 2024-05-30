@@ -1,4 +1,4 @@
-folder = r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\datasets"
+folder = r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\GitHub"
 
 #Exercise1
 print("\nEXERCISE 1\n")
@@ -10,7 +10,7 @@ print(f"Hei,I am {name}\nI am {age} and I love to go {activity}\nI work as an {j
 
 #Exercise2
 print("\nEXERCISE 2\n")
-csvPath = f"{folder}/01_exe2_data.csv"
+csvPath = f"{folder}/datasets/01_exe2_data.csv"
 with open(csvPath,"r")as file:
     lines = file.readlines()
 for line in lines:
@@ -94,7 +94,7 @@ print(f"Characters count without spaces:{len(textwithout)}")
 #Exercise9
 print("\nEXERCISE 9\n")
 
-csv_path =f"{folder}/01_exe9_data.csv"
+csv_path =f"{folder}/datasets/01_exe9_data.csv"
 with open(csv_path,"r")as file:
     lines = file.readlines()   
 
@@ -121,7 +121,7 @@ for line in lines:
 #Exercise11
 print("\nEXERCISE 11\n")
 
-csv_path=f"{folder}/01_exe11_data.csv"
+csv_path=f"{folder}/datasets/01_exe11_data.csv"
 with open(csv_path,"r")as file:
     lines=file.readlines()
 
@@ -233,7 +233,7 @@ for key,value in charDic.items():
 #Exercise14
 print("\nEXERCISE 14\n")
 
-csvPath = f"{folder}/stations.txt"
+csvPath = f"{folder}/datasets/stations.txt"
 with open(csvPath,"r")as file:
     lines=file.readlines()
 
@@ -292,7 +292,6 @@ print(f"average height= {averageh}")
 #Exercise19
 print("\nEXERCISE 19\n")
 
-#csvPath = r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\advanced geomatics\dataset_01\stations.txt"
 with open(csvPath,"r")as file:
     lines=file.readlines()
     
@@ -305,15 +304,7 @@ for line in lines[:1]:
 line0= lineSplit[:5]
 print(line0)
 
-# for line in line0:
-#     line0Split = line0.split(",")
-#     line0Strip= line0Split.strip()
-# print(line0Strip)
-#     print("->")
-# for item in lines[0]:
-#     line0Strip= line.strip()
-#     line0Split =line0Strip.split(",")
-#     print(line0Split[0])
+
     
 #first lines
 for line in lines:
@@ -325,9 +316,6 @@ print(f"File info: {csvPath[-12:]}\n{'-'*25}")
 print(f"Stations count: {len(lines)}\nAverage value: {averageh}\nAvailable fields:")
 print("First data lines:")
 print(linesfirst4)
-
-
-
 
 
 #Exercise20
@@ -381,9 +369,9 @@ def fileSummary(path,idFieldName, avgFieldName):
     for field in fields:
         print(f"-> {field.strip()}")
 
-fileSummary(f"{folder}/station_data.txt", "STAID","RR")
+fileSummary(f"{folder}/datasets/station_data.txt", "STAID","RR")
 print("******************")
-fileSummary(f"{folder}/stations.txt", "CN","HGHT")
+fileSummary(f"{folder}/datasets/stations.txt", "CN","HGHT")
 
 
 #Exercise21
@@ -444,14 +432,14 @@ print(evennumber)
 print("\nEXERCISE 26\n")
 
 
-csvPath = f"{folder}/01_exe26_dataset1.csv"
+csvPath = f"{folder}/datasets/01_exe26_dataset1.csv"
 with open(csvPath,"r")as file:
     lines=file.readlines()
 print(lines[:5])
 
 print("second dataset")
 
-csvPath2 = f"{folder}/01_exe26_dataset2.csv"
+csvPath2 = f"{folder}/datasets/01_exe26_dataset2.csv"
 with open(csvPath2,"r")as file:
     lines2=file.readlines()
 print(lines2[:5])
