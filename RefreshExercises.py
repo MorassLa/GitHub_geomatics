@@ -1,3 +1,5 @@
+folder = r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\datasets"
+
 #Exercise1
 print("\nEXERCISE 1\n")
 age = 25
@@ -8,7 +10,7 @@ print(f"Hei,I am {name}\nI am {age} and I love to go {activity}\nI work as an {j
 
 #Exercise2
 print("\nEXERCISE 2\n")
-csvPath =r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\dataset_01\01_exe2_data.csv"
+csvPath = f"{folder}/01_exe2_data.csv"
 with open(csvPath,"r")as file:
     lines = file.readlines()
 for line in lines:
@@ -92,7 +94,7 @@ print(f"Characters count without spaces:{len(textwithout)}")
 #Exercise9
 print("\nEXERCISE 9\n")
 
-csv_path =r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\dataset_01\01_exe9_data.csv"
+csv_path =f"{folder}/01_exe9_data.csv"
 with open(csv_path,"r")as file:
     lines = file.readlines()   
 
@@ -119,7 +121,7 @@ for line in lines:
 #Exercise11
 print("\nEXERCISE 11\n")
 
-csv_path=r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\dataset_01\01_exe11_data.csv"
+csv_path=f"{folder}/01_exe11_data.csv"
 with open(csv_path,"r")as file:
     lines=file.readlines()
 
@@ -231,7 +233,7 @@ for key,value in charDic.items():
 #Exercise14
 print("\nEXERCISE 14\n")
 
-csvPath = r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\dataset_01\stations.txt"
+csvPath = f"{folder}/stations.txt"
 with open(csvPath,"r")as file:
     lines=file.readlines()
 
@@ -379,9 +381,9 @@ def fileSummary(path,idFieldName, avgFieldName):
     for field in fields:
         print(f"-> {field.strip()}")
 
-fileSummary(r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\dataset_01\station_data.txt", "STAID","RR")
+fileSummary(f"{folder}/station_data.txt", "STAID","RR")
 print("******************")
-fileSummary(r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\dataset_01\stations.txt", "CN","HGHT")
+fileSummary(f"{folder}/stations.txt", "CN","HGHT")
 
 
 #Exercise21
@@ -442,14 +444,14 @@ print(evennumber)
 print("\nEXERCISE 26\n")
 
 
-csvPath = r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\dataset_01\01_exe26_dataset1.csv"
+csvPath = f"{folder}/01_exe26_dataset1.csv"
 with open(csvPath,"r")as file:
     lines=file.readlines()
 print(lines[:5])
 
 print("second dataset")
 
-csvPath2 = r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\dataset_01\01_exe26_dataset2.csv"
+csvPath2 = f"{folder}/01_exe26_dataset2.csv"
 with open(csvPath2,"r")as file:
     lines2=file.readlines()
 print(lines2[:5])
