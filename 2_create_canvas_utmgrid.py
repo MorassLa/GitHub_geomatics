@@ -1,8 +1,7 @@
 folder = r"C:\Users\laura\OneDrive - Scientific Network South Tyrol\Documents\Master\Semester2\3.advanced geomatics\GitHub"
 
 from pyqgis_scripting_ext.core import *
-
-#long than lat
+#long then lat
 
 #Folien02:
 # 00-Draw geometries on a map canvas
@@ -12,14 +11,12 @@ from pyqgis_scripting_ext.core import *
 csvPath = f"{folder}/datasets/02_exe0_geometries.csv"
 with open(csvPath,"r")as file:
     lines = file.readlines()
-    
-    
+
 mypoints=[]
 mylines=[]
 polygons=[]
 
 canvas = HMapCanvas.new()
-
     
 for line in lines:
     line = line.strip()
